@@ -9,11 +9,26 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    @IBOutlet weak var firstNameLbl: UILabel!
+    @IBOutlet weak var lastNameLbl: UILabel!
+    @IBOutlet weak var dobLbl: UILabel!
+    @IBOutlet weak var addressLbl: UILabel!
+    
+    var firstName = String()
+    var lastName = String()
+    var dob = String()
+    var address = String()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        firstNameLbl.text = firstName
+        lastNameLbl.text = lastName
+        dobLbl.text = dob
+        addressLbl.text = address
     }
 
     override func didReceiveMemoryWarning() {
