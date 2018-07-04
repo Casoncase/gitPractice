@@ -22,6 +22,12 @@ class RegisterViewController: UIViewController {
 
     @IBAction func saveButtonPressed() {
         let controller = DetailViewController()
+        
+        controller.firstName = self.firstNameTextField.text!
+        controller.lastName = self.lastNameTextField.text!
+        controller.dob = self.dobTextField.text!
+        controller.address = self.addressTextField.text!
+        
         self.present(controller, animated: true, completion: nil)
     }
     
