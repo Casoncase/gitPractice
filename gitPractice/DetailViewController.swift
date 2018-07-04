@@ -25,10 +25,10 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        firstNameLbl.text = firstName
-        lastNameLbl.text = lastName
-        dobLbl.text = dob
-        addressLbl.text = address
+        self.firstNameLbl.text = firstName
+        self.lastNameLbl.text = lastName
+        self.dobLbl.text = dob
+        self.addressLbl.text = address
     }
 
     override func didReceiveMemoryWarning() {
